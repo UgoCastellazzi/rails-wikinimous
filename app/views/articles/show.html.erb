@@ -1,8 +1,13 @@
-<h1><%= @article.title %><i class="far fa-edit"></i><i class="far fa-trash-alt"></i></h1>
-<p><%= @article.content %></p>
+<h1>
+    <%= @article.title %>
+    <%= link_to article_path(@article.id), method: "delete" do %>
+      <i class="far fa-trash-alt"></i>
+    <% end %>
+    <%= link_to edit_article_path(@article.id) do %>
+      <i class="far fa-edit"></i>
+    <% end %>
+</h1>
 
 <hr>
 
-<%= link_to "All articles", articles_path%>
-
-<%= link_to "Delete article", article_path(@article.id), method: "delete"%>
+<p><%= @article.content %></p>
