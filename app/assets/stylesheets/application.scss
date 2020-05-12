@@ -1,0 +1,40 @@
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+
+.container {
+  padding: 50px 0px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.navbar {
+  padding: 20px 50px;
+  background-color: rgba($color: #000000, $alpha: 0.05);
+  border-bottom: 1px solid black;
+}
+
+.navbar a {
+  color:rgba($color: #000000, $alpha: 0.5);
+  font-size: 24px;
+}
+
+.navbar a:hover {
+    color:rgba($color: #000000, $alpha: 0.8);
+    text-decoration: none;
+}
+
+ul {
+ list-style: none;
+ padding: 0;
+}
+
+h3 {
+ font-size: 20px;
+}
